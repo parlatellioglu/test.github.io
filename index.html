@@ -94,10 +94,7 @@ div#hSub {
 .tableRight:hover
 {animation: wob 3s infinite;
 }
-.blog {
-    background-color: #3b3e45;
-    padding: 15px;
-}
+
 .tableLeft {
     background: #3b3e45;
     width: 25%;
@@ -113,8 +110,8 @@ div#hSub {
    font-family:  \'Courier New\', monospace;
 }
 .logo::after {
-   content: "STAY ALIVE ♡";
-   font-size: 15px;
+   content: "WELCOME!♡";
+   font-size: 30px;
    color: white;
 }
 h4 {
@@ -133,35 +130,7 @@ h4 {
 {animation: wob 3s infinite;
 }
 }
-#viewFriends {
-    display: none;
-}
-.fwiendCounter>b::after {
-    content: " friends";
-    font-size: 15px;
-    color: #845cac;
-}
-.fwiendCount {
-    color: #845cac;
-    font-size: 15px;
-}
-.fwiendCounter>b {
-    font-size: 0px;
-    color: #845cac;
-}
-.fwiendCounter>b>.uName {
-    font-size: 0px;
-    color: #845cac;
-}
-.fwiendCounter:hover
-{animation: wob 3s infinite;
-}
-#header {
-font-family: \'Courier New\', monospace; 
-font-size: 15px; 
-background: !important;
-color: #fff
-}
+
 .topLeft:after {
 content: ""; 
 white-space: pre-wrap; 
@@ -193,23 +162,19 @@ div.songName {color: #000;}
 .player a img, .player audio::-webkit-media-controls-play-button, .player audio::-webkit-media-controls-mute-button, .player audio::-webkit-media-controls-volume-slider, .player audio::-webkit-media-controls-timeline {filter: invert(); -webkit-filter: invert();}
 .player audio, .player audio::-webkit-media-controls, .player audio::-webkit-media-controls-enclosure, .player audio::-webkit-media-controls-panel {background: #fa89de; background: url(https://i.gifer.com/IrF.gif); height: 36px; filter: none}
 
-.fwiendFace, .tableLeft {transition: 0.5s; background: #000 }
-.fwiendFace:hover, .tableLeft:hover {border-radius: 5px; transform: scale(1.2); background: #fffaff url(https://i.gifer.com/IrF.gif); animation: wob .5s linear infinite; box-shadow: 0 0 1rem #636363; border: 1px solid #fff; transition: 0.5s;}
 div#hSub {background: #c18ea4; color: white; text-align: center;}}
 #header a:not(.logo) {margin-left: 10px; color: #c18ea4; font-size: small; text-decoration: none;}
 .avatar{width:200px; margin-right: 20px; image-orientation: from-image; box-shadow: -1px -1px #c18ea4, -2px -2px #c18ea4, 1px 1px #c18ea4, 2px 2px #000, -1px 0px #c18ea4, 0px -1px #c18ea4, 1px -1px #c18ea4, -1px 1px #c18ea4, -2px 1px #c18ea4, 1px -2px #c18ea4, 2px -2px #000, -2px 2px #000;}
 .tableRight {background: transparent !important;}
 
-fwiendCount {Color: #845cac;}
-.fwiendFace img {height: 128px; object-position: top; object-fit: cover;}
 .rightHead {background: #c18ea4; color: #3e236f; padding-left: 4px;}
 h4 {color: #3e236f; margin-bottom: 3px;}
 .boxInfo {border: 3px solid #000; margin-bottom: 20px; margin-top: 20px;}
 .boxHead {background: white; color: white; padding: 3px; padding-bottom: 4px; padding-left: 6px; display: none;}
 #country{position:relative; visibility:hidden;}
-#country::after{content:"outerspace"; font-size:15px; left:0; position:absolute; top:0; visibility:visible;}
+#country::after{content:"Country: Turkey"; font-size:15px; left:0; position:absolute; top:0; visibility:visible;}
 #gender{position:relative; visibility:hidden;}
-#gender::after{content:"Female"; font-size:15px; left:0; position:absolute; top:0; visibility:visible;}
+#gender::after{content:"Pronouns: She/her"; font-size:15px; left:0; position:absolute; top:0; visibility:visible;}
 form {margin-bottom: 20px; text-align: right;}
 
 h3 {display: block; font-size: 2em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold; color: white;}
@@ -248,16 +213,6 @@ h3 {display: block; font-size: 2em; margin-block-start: 1em; margin-block-end: 1
     color: #845cac;
     padding-top: 7px;
 }
-.fwiendFace:hover, .tableLeft:hover {
-border-radius: 5px; 
-transform: scale(1.2); 
-background: #fffaff url(https://i.gifer.com/IrF.gif); 
-animation: wob .5s linear infinite; 
-box-shadow: 0 0 1rem #636363; 
-border: 1px solid #fff; 
-transition: 0.5s;
-}
-
 body{   background-image:url(https://i.imgur.com/Oax2Jeg.jpg); 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -265,7 +220,6 @@ body{   background-image:url(https://i.imgur.com/Oax2Jeg.jpg);
     background-size: 2000px 1000px;
     font-family:  \'Courier New\', monospace;
     text-align: center;
-    text-transform: lowercase;
     padding-top: 45px;
     font-size: 15px;
     text-shadow: 0px 0px 5px #845cac;
@@ -286,6 +240,7 @@ body{   background-image:url(https://i.imgur.com/Oax2Jeg.jpg);
     content: "";
     display: block;
     position: relative;
+    left: 50px
     width: calc(40% -20px);
     height: 360px;
     max-width: 395px;
@@ -293,11 +248,6 @@ body{   background-image:url(https://i.imgur.com/Oax2Jeg.jpg);
     background-size: 100% 100%;
 background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709eb924d33484524e.gif)
 }
-
-
-
-
-
 </style>
 	<style>
 		#header{all: unset;font-family: Arial;font-size: 15px;background: #003399;color: #fff;position: fixed;width: calc( 100% - 15px );height: 22px;padding: 5px;left: 0px;top: 0px;margin-bottom: 40px;border-bottom: 1px solid black;padding-left: 10px;padding-top: 6px;overflow: hidden;z-index: 300;}
@@ -306,7 +256,7 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 	</style>
 	<div id="header">
 	<a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;"></span></b></a>
-	<span id="hUp" style="float:right;margin-right: 5px;margin-top: 3px;font-size: small;"><a href="signup.php">SignUp</a><a href="login.php">Login</a></span>	</div>
+	</div>
 	<div id="hSub">
 		<a href="/?id=1">Home</a>  | <a href="/list.php">All <span class="sep">Fwiends</span></a> | <a href="/random.php">Rand<span class="sep">om</span></a> | <a href="/online.php">Online</a> | <a href="/music.php">Music</a>   <span class="sep">| <a href="/blog.php">Blog</a> </span> | <a href="/search.php">Search</a>
 	</div>	<div class="topLeft" style="animation-name: none;">
@@ -319,9 +269,9 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 				</td>
 				<td class="shortRight">
 					<div>"<span id="credo">Hi! I'm Parla Tellioğlu</span>"</div><br>
-					<div id="pronouns:">She/her</div>
+					<div id="pronouns">Pronouns: She/her</div>
 					<div><span id="age">16</span> years old</div>
-					<div id="country">Turkey</div>
+					<div id="country">Country: Turkey</div>
 				</td>
 			</tr>
 		</tbody></table>
