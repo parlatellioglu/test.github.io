@@ -1,51 +1,18 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 	<meta charset="UTF-8">
-	<title>MYSPACE</title>
-	<meta name="description" content="A PLACE FOR FWIENDS">
+	<title>Project</title>
 	<link rel="icon" type="image/png" href="favicon.png">
-	<meta property="og:og:title" content="MYSPACE">
-	<meta property="og:determiner" content="MY">
+	<meta property="og:og:title" content="Parla's Project">
 	<meta property="og:type" content="website">
-	<meta property="og:description" content="A PLACE FOR FWIENDS">
-	<meta property="og:image" content="https://myspace.windows93.net/u/1/avatar.jpg">
-	<meta property="og:url" content="https://myspace.windows93.net/?id=69133">
-	<meta property="og:site_name" content="MYSPACE.WINDOWS93.NET">
+	<meta property="og:site_name" content="Parla's Project">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
-	<div id="container" style="animation-name: none;">	<script>
-		function timeConverter(t) {     
-		    //var a = new Date(t * 1000);
-		    var a = new Date(parseInt(t));
-		    var today = new Date();
-		    var yesterday = new Date(Date.now() - 86400000);
-		    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-		    var year = a.getFullYear();
-		    var month = months[a.getMonth()];
-		    var date = a.getDate();
-		    var hour = a.getHours();
-		    if (hour<10) {hour='0'+hour};
-		    var min = a.getMinutes();
-		    if (min<10) {min='0'+min};
-		    if (a.setHours(0,0,0,0) == today.setHours(0,0,0,0))
-		        return 'Today, ' + hour + ':' + min;
-		    else if (a.setHours(0,0,0,0) == yesterday.setHours(0,0,0,0))
-		        return 'Yesterday, ' + hour + ':' + min;
-		    else if (year == today.getFullYear())
-		        return date + ' ' + month + ', ' + hour + ':' + min;
-		    else
-		        return date + ' ' + month + ' ' + year + ', ' + hour + ':' + min;
-		}
-		function addStyleString(str) {
-		    var node = document.createElement('style');
-		    node.innerHTML = str;
-		    document.body.appendChild(node);
-		}	
-	</script>
-		<style>a {
+	<div id="container" style="animation-name: none;">
+<style>a {
     color: #845cac;
 }
 .uName:hover
@@ -338,12 +305,12 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 		@media only screen and (max-width:768px){#header{height:51px}#hSub{top:63px}#hUp{float:left;left:0;font-size:small;position:fixed;top:35px}.sep{display:none}.topLeft{margin-top:30px}}
 	</style>
 	<div id="header">
-	<a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;">myspace.windows93.net</span></b></a>
+	<a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;"></span></b></a>
 	<span id="hUp" style="float:right;margin-right: 5px;margin-top: 3px;font-size: small;"><a href="signup.php">SignUp</a><a href="login.php">Login</a></span>	</div>
 	<div id="hSub">
 		<a href="/?id=1">Home</a>  | <a href="/list.php">All <span class="sep">Fwiends</span></a> | <a href="/random.php">Rand<span class="sep">om</span></a> | <a href="/online.php">Online</a> | <a href="/music.php">Music</a>   <span class="sep">| <a href="/blog.php">Blog</a> </span> | <a href="/search.php">Search</a>
 	</div>	<div class="topLeft" style="animation-name: none;">
-		<div><h2 class="uName" id="name">angellll</h2></div>
+		<div><h2 class="uName" id="name">About Me!</h2></div>
 		<table class="short">
 			<tbody><tr>	
 				<td>
@@ -351,12 +318,10 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 						
 				</td>
 				<td class="shortRight">
-					<div>"<span id="credo">Hi!</span>"</div><br>
-					<div id="gender">Female</div>
+					<div>"<span id="credo">Hi! I'm Parla Tellioğlu</span>"</div><br>
+					<div id="pronouns:">She/her</div>
 					<div><span id="age">16</span> years old</div>
-					<div id="country">Interzone</div>
-					<div id="online" style="display:none;margin-top:10px;"><img src="/img/online.gif"></div>
-					<div style="font-size:small;margin-top:10px;">Last Login:<br><span id="lastLogin">29/06/2021</span></div>
+					<div id="country">Turkey</div>
 				</td>
 			</tr>
 		</tbody></table>
@@ -367,15 +332,11 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 			<a href="invitation.php?id=69133"><div class="boxButton" id="add">Add to fwiends</div></a>
 			<a href="blokc.php?id=69133"><div class="boxButton" id="block">Block</div></a>
 		</div>
-		<div class="url box">
-			<div><b>MySpace URL:</b></div>
-			<div><a style="color:#000;text-decoration:none;" href="https://myspace.windows93.net/?id=69133">https://myspace.windows93.net/?id=69133</a></div>
-		</div>
 		<div class="player box"><div class="songName"><b>Song:</b> <span class="songTitle">joji - will he (ryan hemsworth remix)
-</span><a href="https://myspace.windows93.net/u/69133/audio.mp3?v=1627056657" download="joji - will he (ryan hemsworth remix).mp3"><img style="height: 15px; float: right; padding-right: 2px;" src="https://myspace.windows93.net/img/download.svg"></a></div><audio controls="" autoplay="" src="u/69133/audio.mp3?v=1627056657" controlslist="nodownload"></audio></div>	
+</span><a download="joji - will he (ryan hemsworth remix).mp3"><img style="height: 15px; float: right; padding-right: 2px;" "></a></div><audio controls="" autoplay="" src="u/69133/audio.mp3?v=1627056657" controlslist="nodownload"></audio></div>	
 	</div>
 	<div class="topRight" style="animation-name: none;">
-		<div class="extended box"><h3><span class="uName">angellll</span> is in your extended network</h3></div>
+		<div class="extended box"><h3><span class="uName">More detailed information</h3></div>
 				<div class="box blurbs">
 					<div class="rightHead"><b><span class="uName">angellll</span>'s blurbs</b></div>
 			<h4>About me:</h4>
@@ -393,34 +354,10 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 			<div id="who">
 				<p>anyone who wants to be my friend!</p>			</div>	
 		</div>
-		<div class="box fwiends">
-			<div class="rightHead"><b><span class="uName">angellll</span>'s 		</tbody></table>
-			<div style="font-size:small;text-align:right;">(43/100)</div>		</div>
+			
 	</div>
 	<div id="imgPreview"><img src=""></div>
 	<div id="footer" class="box">
-<div>
-	<p>
-		<a href="about.php">About</a> <a href="help.php">Help</a> 
-		<a href="login.php">Login</a>		<br>© 1993-2021 <a style="text-decoration:none;" href="http://windows93.net">Windows93.net</a>
-	</p>
-</div>	
-</div>	<script>
-		$( ".date" ).each(function( index ) {
-			var time =  timeConverter($( this ).text())
-		 	$( this ).text(time)
-		});
-		var time = Date.now()-parseInt($('#lastLogin').text())
-		if(time<900000||69133==1){
-			$('#online').show()
-		}
-		var time = new Date( parseInt($('#lastLogin').text()) )
-		var d = time.getDate();if (d<10) {d="0"+d};		
-		var m = time.getMonth()+1;if (m<10) {m="0"+m};
-		var y = time.getFullYear();
-		$('#lastLogin').text(	d+'/'+m+'/'+y	); 	</script>
-	<script type="text/javascript" src="index.js"></script>
-	</div>
 
 </body></html>
 
