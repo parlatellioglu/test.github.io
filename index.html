@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en"><head>
+	<html lang="en"><head>
 	<meta charset="UTF-8">
 	<title>Project</title>
 	<link rel="icon" type="image/png" href="favicon.png">
@@ -11,8 +11,8 @@
 	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
-	<div id="container" style="animation-name: none;">
-<style>a {
+	<div id="container" style="animation-name: none;">	
+		<style>a {
     color: #845cac;
 }
 .uName:hover
@@ -88,13 +88,16 @@ div#hSub {
     width: 75%;
     background: #3b3e45;
     padding: 10px;
-    vertical-align: top;
+    vertical-align: bottom;
     overflow-wrap: anywhere;
 }
 .tableRight:hover
 {animation: wob 3s infinite;
 }
-
+.blog {
+    background-color: #3b3e45;
+    padding: 15px;
+}
 .tableLeft {
     background: #3b3e45;
     width: 25%;
@@ -110,9 +113,9 @@ div#hSub {
    font-family:  \'Courier New\', monospace;
 }
 .logo::after {
-    content: "WELCOME! ♡";
-    font-size: 15px;
-    color: white;
+   content: "welcome!";
+   font-size: 30px;
+   color: white;
 }
 h4 {
     color: #845cac;
@@ -123,14 +126,19 @@ h4 {
 }
 .rightHead {
     background: #3b3e45;
-    color: #845cac;
+    color: white;
     padding-left: 4px;
 }
 .rightHead:hover
 {animation: wob 3s infinite;
 }
-}
 
+#header {
+font-family: \'Courier New\', monospace; 
+font-size: 15px; 
+background: !important;
+color: #fff
+}
 .topLeft:after {
 content: ""; 
 white-space: pre-wrap; 
@@ -162,11 +170,15 @@ div.songName {color: #000;}
 .player a img, .player audio::-webkit-media-controls-play-button, .player audio::-webkit-media-controls-mute-button, .player audio::-webkit-media-controls-volume-slider, .player audio::-webkit-media-controls-timeline {filter: invert(); -webkit-filter: invert();}
 .player audio, .player audio::-webkit-media-controls, .player audio::-webkit-media-controls-enclosure, .player audio::-webkit-media-controls-panel {background: #fa89de; background: url(https://i.gifer.com/IrF.gif); height: 36px; filter: none}
 
+.fwiendFace, .tableLeft {transition: 0.5s; background: #000 }
+.fwiendFace:hover, .tableLeft:hover {border-radius: 5px; transform: scale(1.2); background: #fffaff url(https://i.gifer.com/IrF.gif); animation: wob .5s linear infinite; box-shadow: 0 0 1rem #636363; border: 1px solid #fff; transition: 0.5s;}
 div#hSub {background: #c18ea4; color: white; text-align: center;}}
 #header a:not(.logo) {margin-left: 10px; color: #c18ea4; font-size: small; text-decoration: none;}
 .avatar{width:200px; margin-right: 20px; image-orientation: from-image; box-shadow: -1px -1px #c18ea4, -2px -2px #c18ea4, 1px 1px #c18ea4, 2px 2px #000, -1px 0px #c18ea4, 0px -1px #c18ea4, 1px -1px #c18ea4, -1px 1px #c18ea4, -2px 1px #c18ea4, 1px -2px #c18ea4, 2px -2px #000, -2px 2px #000;}
 .tableRight {background: transparent !important;}
 
+fwiendCount {Color: #845cac;}
+.fwiendFace img {height: 128px; object-position: top; object-fit: cover;}
 .rightHead {background: #c18ea4; color: #3e236f; padding-left: 4px;}
 h4 {color: #3e236f; margin-bottom: 3px;}
 .boxInfo {border: 3px solid #000; margin-bottom: 20px; margin-top: 20px;}
@@ -213,6 +225,16 @@ h3 {display: block; font-size: 2em; margin-block-start: 1em; margin-block-end: 1
     color: #845cac;
     padding-top: 7px;
 }
+.fwiendFace:hover, .tableLeft:hover {
+border-radius: 5px; 
+transform: scale(1.2); 
+background: #fffaff url(https://i.gifer.com/IrF.gif); 
+animation: wob .5s linear infinite; 
+box-shadow: 0 0 1rem #636363; 
+border: 1px solid #fff; 
+transition: 0.5s;
+}
+
 body{   background-image:url(https://i.imgur.com/Oax2Jeg.jpg); 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -247,6 +269,11 @@ body{   background-image:url(https://i.imgur.com/Oax2Jeg.jpg);
     background-size: 100% 100%;
 background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709eb924d33484524e.gif)
 }
+
+
+
+
+
 </style>
 	<style>
 		#header{all: unset;font-family: Arial;font-size: 15px;background: #003399;color: #fff;position: fixed;width: calc( 100% - 15px );height: 22px;padding: 5px;left: 0px;top: 0px;margin-bottom: 40px;border-bottom: 1px solid black;padding-left: 10px;padding-top: 6px;overflow: hidden;z-index: 300;}
@@ -254,15 +281,15 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 		@media only screen and (max-width:768px){#header{height:51px}#hSub{top:63px}#hUp{float:left;left:0;font-size:small;position:fixed;top:35px}.sep{display:none}.topLeft{margin-top:30px}}
 	</style>
 	<div id="header">
-	<a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;">myspace.windows93.net</span></b></a>
+	<a class="logo" href="/?id=1" style=""><b><span style="padding-top: 2px; position: absolute;"></span></b></a>
+	<span id="hUp" style="float:right;margin-right: 5px;margin-top: 3px;font-size: small;"><a </a></span>	</div>
 	<div id="hSub">
-		<a href="/?id=1">Home</a>  | <a href="/list.php">All <span class="sep">Fwiends</span></a> | <a href="/random.php">Rand<span class="sep">om</span></a> | <a href="/online.php">Online</a> | <a href="/music.php">Music</a>   <span class="sep">| <a href="/blog.php">Blog</a> </span> | <a href="/search.php">Search</a>
+		<a href="/?id=1">Home</a>  | <a href="/list.php">All </a> | <a href="/random.php">Rand<span class="sep">om</span></a> | <a href="/online.php">Online</a> | <a href="/music.php">Music</a>   <span class="sep">| <a href="/blog.php">Blog</a> </span> | <a href="/search.php">Search</a>
 	</div>	<div class="topLeft" style="animation-name: none;">
-		<div><h2 class="uName" id="name">About Me!</h2></div>
 		<table class="short">
 			<tbody><tr>	
 				<td>
-					<img src="u/69133/avatar.jpg?v=1627056657" class="avatar" id="avatar">	
+					<img src="u/69133/avatar.jpg?v=1627060012" class="avatar" id="avatar">	
 						
 				</td>
 				<td class="shortRight">
@@ -274,19 +301,19 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 			</tr>
 		</tbody></table>
 		<div class="boxInfo box">
-			<div class="boxHead"><b>Contacting <span class="uName">angellll</span></b></div>
+			<div class="boxHead"><b>Contacting</span></b></div>
 			<a href="send.php?id=69133"><div class="boxButton" id="sMsg">Send Message</div></a>
 			<a href="report.php?id=69133"><div class="boxButton" id="report">Report</div></a>
 			<a href="invitation.php?id=69133"><div class="boxButton" id="add">Add to fwiends</div></a>
 			<a href="blokc.php?id=69133"><div class="boxButton" id="block">Block</div></a>
 		</div>
 		<div class="player box"><div class="songName"><b>Song:</b> <span class="songTitle">joji - will he (ryan hemsworth remix)
-</span><a download="joji - will he (ryan hemsworth remix).mp3"><img style="height: 15px; float: right; padding-right: 2px;" "></a></div><audio controls="" autoplay="" src="u/69133/audio.mp3?v=1627056657" controlslist="nodownload"></audio></div>	
+</span><a href="https://myspace.windows93.net/u/69133/audio.mp3?v=1627060012" download="joji - will he (ryan hemsworth remix).mp3"><img style="height: 15px; float: right; padding-right: 2px;" src="https://myspace.windows93.net/img/download.svg"></a></div><audio controls="" autoplay="" src="u/69133/audio.mp3?v=1627060012" controlslist="nodownload"></audio></div>	
 	</div>
 	<div class="topRight" style="animation-name: none;">
-		<div class="extended box"><h3><span class="uName">More detailed information</h3></div>
+		<div class="extended box"><h3><span class="uName"></span> More detailed information</h3></div>
 				<div class="box blurbs">
-					<div class="rightHead"><b><span class="uName">angellll</span>'s blurbs</b></div>
+					<div class="rightHead"><b><span class="uName"></span>Photos</b></div>
 			<h4>About me:</h4>
 			<div id="about"><p>here's a little bit about me:</p>
 <ul>
@@ -302,11 +329,17 @@ background-image: url(https://i.pinimg.com/originals/f4/db/6f/f4db6fff7d8c50709e
 			<div id="who">
 				<p>anyone who wants to be my friend!</p>			</div>	
 		</div>
-			
-	</div>
+		<div class="box fwiends">
+			<div class="rightHead"><b><span class="uName">angellll</span>'s Fwiends Space</b></div>
+			<div class="fwiendCounter"><b><span class="fwiendCount"></span>Some photos of me:</b></div>	
+			<div id="top">
+			<a ><div class="fwiendFace"><b>Tom</b><img src="u/1/avatar.jpg"></div></a><a ><div 
+class="fwiendFace"><b>きあら</b><img src="u/25270/avatar.jpg"></div></a><a ><div class="fwiendFace"><b>Bill</b><img 
+src="u/3083/avatar.jpg"></div></a>			</div>
+		
+		
 	<div id="imgPreview"><img src=""></div>
 	<div id="footer" class="box">
 
+
 </body></html>
-
-
